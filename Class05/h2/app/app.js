@@ -1,16 +1,14 @@
 let firstName = ["Dejan","Jelena","Alek","Mila"];
-let lastName = ["Kostenarov","Spasovska","Kostenarov","Doe"];
+let lastName = ["Kostenarov","Spasovska","Petrovski","Makarenova"];
 
-function fullName(fName,lName){
-  for(let i in fName,lName){
-    let position = +i + 1;
-    console.log(`${position}. ${fName[i]} ${lName[i]}`)
+function listOfNames(first,last){
+  let innerArray = [];
+  for(i=0;i<first.length;i++){
+    let position = +i + 1
+    innerArray[i] = `${position}. ${first[i]} ${last[i]}`;
   }
+  return innerArray
 }
 
-let fullN = fullName(firstName,lastName);
+let fullName = console.log(listOfNames(firstName,lastName));
 
-
-/* Ne uspeav da ja resam do kraj nekako me buni kako da iskreiram nov array vnatre vo funkcijata,
-zatoa bi ve zamolil za nekakva nasoka makar sajt kade mozam podetalno da gi razgledam stvarive poso si bara vreme za zdravo sednuvanje i ucenje,
-nesto koe za zal ne go imam vo momentov ama baby steps ideme nataka :)*/
