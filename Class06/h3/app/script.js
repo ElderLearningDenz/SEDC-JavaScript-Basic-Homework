@@ -6,7 +6,7 @@ let tableHead = document.createElement('thead');
 mainDiv.append(myTable);
 myTable.append(tableBody);
 myTable.prepend(tableHead);
-myTable.style.border = '2px solid black';
+myTable.setAttribute('border', '2');
 tableHead.style.color = 'red';
 
 let titleInput = prompt('What is the name of the recipe?');
