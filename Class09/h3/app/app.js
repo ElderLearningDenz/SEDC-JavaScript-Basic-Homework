@@ -9,9 +9,9 @@ $(document).ready(function () {
       btn.click(function () {
         for (let item of result) {
           div.append(
-            `<p>ID# ${item.id}<br>Title:${item.title}<br>Completed:"${
+            `<ul><li>ID# ${item.id}<br>Title:${item.title}<br>Completed:"${
               item.completed ? "Completed" : "Not Completed"
-            }"</p>`
+            }"</li></ul>`
           );
         }
       });
