@@ -22,11 +22,11 @@ function listAnimals(arr, element) {
 }
 
 mainButton.addEventListener('click', function() {
-	let animal = new Animal(animalName.value, animalType.value, animalAge.value);
-	animalsArr.push(animal);
 	animalName.value = '';
 	animalType.value = '';
 	animalAge.value = '';
+	let animal = new Animal(animalName.value, animalType.value, animalAge.value);
+	animalsArr.push(animal);
 	listAnimals(animalsArr, ul);
 });
 
